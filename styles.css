@@ -41,9 +41,20 @@ h1 {
   margin: 30px 0;
 }
 
+@keyframes purple-gradient {
+  0% {background-color: var(--purple);}
+  50%{background-color: var(--blue-dark);}
+  
+  100%{background-color: var(--purple);}
+  
+}
+
 .purple-section {
   background-color: var(--purple);
   color: var(--white);
+
+  animation-name: purple-gradient;
+  animation-duration: 12s;
 }
 
 .form-cta {
@@ -73,6 +84,12 @@ h1 {
   background-color: var(--gray-light);
   color: var(--blue-dark);
 }
+
+.form-cta > button:active {
+  background-color: var(--purple);
+  border: solid 1px var(--white);
+}
+
 
 @media (max-width: 1200px) {
   #img-laptop {
