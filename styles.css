@@ -30,6 +30,10 @@ h1 {
   h1 {
     font-size: 20px;
   }
+
+  h2 {
+    font-size: 12px;
+  }
 }
 
 .logo > img {
@@ -70,6 +74,12 @@ h1 {
   color: var(--blue-dark);
 }
 
+@media (max-width: 1200px) {
+  #img-laptop {
+    width: 100%;
+  }
+}
+
 .img-waves {
   width: 100%;
   vertical-align: middle;
@@ -83,23 +93,14 @@ h1 {
   margin: 0 auto;
 }
 
-/* this is media query when screen are smaller than 600px */
-@media only screen and (max-width: 600px) {
+@media (max-width: 800px) {
   #section-articles {
     flex-direction: column;
-    align-items: center;
   }
 }
 
 #section-articles > article {
   padding: 40px;
-}
-
-@media only screen and (max-width: 600px) {
-  #section-articles > article {
-    padding: 3%;
-    max-width: 70%;
-  }
 }
 
 #section-articles > article h4 {
@@ -115,6 +116,12 @@ hr {
   width: 500px;
   text-align: center;
   margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  hr {
+    width: 200px;
+  }
 }
 
 /* ========== SECTION CLIENTS ============*/
@@ -139,16 +146,6 @@ hr {
 
 span {
   text-transform: uppercase;
-}
-
-@media only screen and (max-width: 600px) {
-  #section-testimonials {
-    font-size: 10px;
-  }
-
-  #section-testimonials h4 {
-    font-size: 14px;
-  }
 }
 
 /* ========== FOOTER STYLES ============*/
